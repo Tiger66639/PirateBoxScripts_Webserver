@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Pirateboxscripts webserver by Tiger66639</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/Tiger66639/PirateBoxScripts_Webserver">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/Tiger66639/PirateBoxScripts_Webserver/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/Tiger66639/PirateBoxScripts_Webserver/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Pirateboxscripts webserver</h1>
+          <p>PirateBox Scriptcollection for running in Webserver</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/Tiger66639">Tiger66639</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="pirateboxscripts-with-modifications-for-running-in-a-webserver" class="anchor" href="#pirateboxscripts-with-modifications-for-running-in-a-webserver" aria-hidden="true"><span class="octicon octicon-link"></span></a>PirateBoxScripts with Modifications for running in a Webserver</h1>
+
+<p><a href="https://travis-ci.org/Tiger66639/PirateBoxScripts_Webserver"><img src="https://travis-ci.org/Tiger66639/PirateBoxScripts_Webserver.svg" alt="Build Status"></a>
+© 2012-2014 <a href="mailto:matthias.strubel@aod-rpg.de">Matthias Strubel</a> licenced under GPL-3</p>
+
+<h2>
+<a id="maintainers" class="anchor" href="#maintainers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maintainers</h2>
+
+<ul>
+<li>
+<a href="matthias.strubel@aod-rpg.de">Matthias Strubel</a><br>
+</li>
+</ul>
+
+<p>Sources for Running PirateBox with Webserver lighttpd<br>
+Contains: Shoutbox, Forum</p>
+
+<p>PirateBox is a collection of scripts / programs that allows you to use your wireless card
+as a local network to share files and chat anonymously. For more information please visit
+<a href="http://daviddarts.com/">http://daviddarts.com/</a></p>
+
+<h2>
+<a id="info" class="anchor" href="#info" aria-hidden="true"><span class="octicon octicon-link"></span></a>Info</h2>
+
+<p>Packages contains only scripts based PirateBox scripts with running lighttpd webserver.</p>
+
+<p>PirateBox scripts can:</p>
+
+<ul>
+<li>Setup WLAN Interface via iw</li>
+<li>Setup hotspot functionality (hostapd)</li>
+<li>Setup IP Adresses of wlan interface</li>
+<li>Probing until USB-WLAN is available</li>
+<li>Can add wlan interface to an existing bridge</li>
+<li>Sets Up a DHCP Server with redirect to wlan-interface IP</li>
+<li>Upload landing page  (via iframe droopy)</li>
+<li>Browse Uploaded files</li>
+<li>Announce "Internet yes" for iOS</li>
+<li>Announce "Internet yes" for MS devices</li>
+<li>ShoutBox</li>
+<li>Optional small python Forum</li>
+<li>Optional imageboard</li>
+<li>Optional Station counter</li>
+<li>Optional Inihibit starting upload-script</li>
+<li>Optional Timesave script (for devices without RTC)  - can be found in piratebox/bin/timesave.sh </li>
+<li>Optional Poll for WLAN device until it available (for USB wifi cards)</li>
+</ul>
+
+<p>More information can be found on: <a href="http://piratebox.aod-rpg.de">http://piratebox.aod-rpg.de</a><br>
+Installation-HowTo and current Download-Link: <a href="http://piratebox.aod-rpg.de/dokuwiki/doku.php/piratebox_lighttpd">http://piratebox.aod-rpg.de/dokuwiki/doku.php/piratebox_lighttpd</a></p>
+
+<p>Is supported by <a href="https://github.com/MaStr/mkPirateBox">mkPirateBox &gt; v0.5 for OpenWRT Systems</a>
+and by <a href="https://github.com/TerrorByte/PirateBox-Manager">PirateBox Manager</a>.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>PirateBox should be in most common repositories soon, but in the mean time you can use this method:</p>
+
+<h3>
+<a id="for-alpha-testing" class="anchor" href="#for-alpha-testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>For alpha testing</h3>
+
+<p>Download the <a href="https://github.com/MaStr/PirateBoxScripts_Webserver/archive/development.zip">development package</a>.</p>
+
+<p>Unzip the package:</p>
+
+<pre><code>unzip development.zip
+</code></pre>
+
+<p>Run the installer in the unzipped folder:</p>
+
+<pre><code>cd PirateBoxScripts_Webserver/piratebox
+sudo ./install.sh default
+#Default can be substituted with 'board' if you want an image board on your PirateBox
+</code></pre>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
